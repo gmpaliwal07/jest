@@ -39,7 +39,7 @@
     "eslint-plugin-markdown": "^5.1.0",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-unicorn": "^59.0.0",
     "execa": "^5.0.0",
     "find-process": "^1.4.1",
     "glob": "^10.3.10",
@@ -86,7 +86,7 @@
   },
   "scripts": {
     "build-clean": "rimraf --glob './packages/*/build' './packages/*/dist' './packages/*/tsconfig.tsbuildinfo' './packages/*/api-extractor.json' './api-extractor.json'",
-    "build": "yarn build:js && yarn build:ts && yarn bundle:ts",
+    "build": "node api.js && yarn build:js && yarn build:ts && yarn bundle:ts",
     "build:js": "node ./scripts/build.mjs",
     "build:ts": "node ./scripts/buildTs.mjs",
     "bundle:ts": "node ./scripts/bundleTs.mjs",
