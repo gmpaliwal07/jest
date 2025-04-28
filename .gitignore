@@ -56,3 +56,5 @@ crowdin-cli.jar
 
 # We don't want these temp files
 packages/jest-worker/src/workers/__tests__/__temp__
+temp_auto_push.bat
+temp_interactive_push.bat
